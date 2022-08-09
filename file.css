@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Segoe UI";
+    /* border: 1px solid red; */
+
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    color: white;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(24,25,26);
+}
+/* navigation section */
+.nav{
+    position:relative;
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(36,37,38);
+    border: 1px solid rgb(57,58,59);
+    z-index: 10;
+}
+    .main-nav{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: horizontal;
+        justify-content: space-around;
+        position: fixed;
+        background-color: rgb(36,37,38);
+        z-index: 11;
+
+    }
+        .facebook-logo__search-box{
+            position: relative;
+            height:100%;
+            width: 20em;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+            .facebook-logo__search-box img{
+                position: relative;
+                height: 63%;
+                cursor: pointer;
+            }
+            .facebook-logo__search-box .search-box{
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 16rem;
+                height: 5.8vh;
+                background-color: rgb(58,59,60);
+                border-radius: 35px;
+                padding-left: 1rem;
+            }
+                .facebook-logo__search-box #search{
+                
+                    color: wheat;
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                    height:60%;
+
+                }
+                .facebook-logo__search-box .search-box input{
+                    width: 80%;
+                    height: 80%;
+                    background-color: rgb(58,59,60);
+                    border: none;
+                    font-family: 'Segoe UI';
+                    font-size: 1.1rem;
+                    font-weight: 100;
+                    padding: 0 0 0 0.5rem;
+                }
+                .facebook-logo__search-box .search-box input::placeholder{
+                    color:#e4e6eb ;
+                }
+
+
+                /*mid section start  */
+        .mid-section{
+            position: relative;
+            width: 40em;
+        
+        }
+            .mid-section ul{
+                height: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+                .mid-section ul li{
+                    width: 17%;
+                    height: 7vh;
+                    border-radius: 9px;
+                    text-align: center;
+                    padding:0.7rem 0 0 0;
+                    cursor: pointer;
+                }
+                .mid-section ul li:hover{
+                    background-color:rgb(58,59,60) ;
+                }
+                .mid-section ul li a{
+                    color: white;
+                }
+                .mid-section ul .material-icons-round.md-36{
+                    font-size: 33px;
+                }
+        
+
+
+/* last section */
+        .last-section{
+            position: relative;
+            width: 15em;
+        }
+        .last-section ul{
+           
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+            .last-section ul li {
+                height: 6vh;
+                width: 3.2vw;
+                padding: 0.5rem;
+                border-radius: 50%;
+               
+                cursor: pointer;
+                position: relative;
+                background-color:rgb(58,59,60) ;
+            }
+            .last-section ul li a{
+                color: white;
+            }
+            .last-section ul li .material-icons-round.md-36,.material-icons-outlined.md-36,.material-symbols-outlined.md-36{
+                font-size: 33px;
+            }
+            .last-section li:hover{
+                background-color:rgb(86, 87, 88) ;
+            }
+            .last-section ul li:last-child{
+                height: 6vh;
+                width: 3.2vw;
+                border-radius: 50%;
+                padding: 0;
+                background-image: url(./images/ashim-1.JPG);
+                background-position: center;
+                background-size: cover;
+            }
+
+/* end of navigation section */
+
+/* left side page */
+
+.left-side{
+    width: calc(100% - 80%);
+    height: 90vh;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+    .left-side .left-sideBar-content{
+        position: relative;
+        height: 67%;
+        /* border: 1px solid green; */
+    }
+    .left-side .left-sideBar-content ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0.7rem 0 0 0;
+    }
+    .left-side .left-sideBar-content ul li{
+        height: 6vh;
+        margin:0 0 0 1vw;
+        /* border: 1px solid white; */
+        font-weight: 500;
+        border-radius: 7px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .left-side .left-sideBar-content ul li:hover{
+        background-color:rgb(58,59,60) 
+    }
+    .left-side .left-sideBar-content ul li a{
+        display: flex;
+        width: 100%;
+        /* border: 1px solid green; */
+        color: white;
+        align-items: center;
+    }
+    .left-side .left-sideBar-content ul li a p{
+        /* border: 1px solid red; */
+        margin-left: 1rem;
+    }
+    .left-side .left-sideBar-content ul li img{
+        height: 5vh;
+        width: 2.5vw;
+        border-radius: 50%;
+        /* border: 1px solid red; */
+        object-fit: cover;
+        object-position: center;
+        margin:0.5rem 0 0 0.5rem;
+    }
+    .left-side .left-sideBar-content ul li h4{
+        height: max-content;
+        /* border: 1px solid blue; */
+    }
+
+    .left-side .left-sideBar-content .material-icons-round.md-36{
+        font-size: 25px;
+        color:rgb(7,120,232);
+        margin-left: 1rem;
+        /* border: 1px solid red; */
+    }
+    .left-side .left-sideBar-content .material-symbols-outlined.md-36{
+        font-size: 25px;
+        color:rgb(7,120,232);
+        /* border: 1px solid red; */
+    }
+    #downarrow{
+        border-radius: 50%;
+        margin-left: 1rem;
+        background-color: rgb(48,48,49);
+    }
+
+    /* inside the seemore */
+    /* outside see more */
+hr{
+    position: relative;
+    height: 1px;
+    border: none;
+    background-color: rgb(62,64,66);
+    color:rgb(62,64,66) ;
+}  
+#shortcut{
+    color: rgb(123,126,129);
+    margin-left: 2rem;
+}  
+/* end of left side page */
+
+/* start of right side page */
+
+.right-side-page::-webkit-scrollbar{
+    width: 10px;
+}
+.right-side-page::-webkit-scrollbar-track{
+    background-color: rgb(24,25,26);
+}
+.right-side-page::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color:rgb(94,94,95);
+
+}
+.right-side-page{
+    position: absolute;
+    top:8.5vh;
+    left:calc(100% - 23%);
+    width:calc( 100% - 77%);
+    height: max-content;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+.right-side-page:hover{
+    overflow-y: scroll;
+}
+    .right-side-page .upper-part{
+        position: relative;
+        height: max-content;
+        /* border: 1px solid green; */
+        padding: 1vh 0 0 0;
+    }
+    .right-side-page .upper-part .title{
+    color: rgb(123,126,129);
+    /* border: 1px solid red; */
+    }
+    .right-side-page .upper-part .divs{
+        position: relative;
+        margin-top: 2vh;
+        height: 20vh;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+    }
+    .right-side-page .upper-part .divs img{
+        border: 1px solid white;
+        height: 70%;
+        width: 10vw;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+    /* .right-side-page .upper-part .first-div img{
+        object-fit:cover;
+        object-position: 40% 60%;
+        
+        border: 1px solid red;
+    }
+    .right-side-page .upper-part .second-div img{
+        border: 1px solid red;
+    } */
+    
+    /* right side lower part */
+    .lower-part{
+        position: relative;
+        height:35vh ;
+        /* border:1px solid red; */
+        /* overflow:scroll; */
+    }
+        .lower-part ul header{
+            padding: 0 0 0 1rem;
+            display: flex;
+            margin: 0 0 1.5rem 0;
+            justify-content: space-between;
+        }
+        .lower-part ul header p{
+            width: 60%;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .lower-part ul li {
+            padding: 0 0 0 1rem;
+            height: 6vh;
+            
+        }
+        .lower-part ul li:hover{
+            border-radius: 8px;
+            background-color:rgb(58,59,60);
+            
+        }
+        .lower-part ul li a{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color:rgb(105,107,110);
+        }
+        .lower-part ul li img{
+            height: 5vh;
+            width: 2.5vw;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            border: 1px solid red;
+            filter: grayscale(70%);
+
+        }
+        .lower-part ul li p{
+            margin-left: 1rem;
+        }
+    /* END right side lower part */
+/* end of right side page */
