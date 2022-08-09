@@ -169,7 +169,7 @@ body{
     width: calc(100% - 80%);
     height: 90vh;
     position: relative;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
     .left-side .left-sideBar-content{
@@ -271,7 +271,7 @@ hr{
     left:calc(100% - 23%);
     width:calc( 100% - 77%);
     height: max-content;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     overflow: hidden;
 }
 .right-side-page:hover{
@@ -363,3 +363,102 @@ hr{
         }
     /* END right side lower part */
 /* end of right side page */
+
+/* start of mid section */
+.main-mid-section{
+    border: 1px solid white;
+    position: absolute;
+    top: 8.4vh;
+    left: calc(100% - 80%);
+    height: 90vh;
+    width: calc(100% - 43%);
+}
+
+/* story section */
+    .main-mid-section .story-section{
+        padding:1rem 0 0 0rem;
+        position: relative;
+        height: 30vh;
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-mid-section .story-section .your-story{
+        position: relative;
+        /* border :1px solid white; */
+        border-radius: 15px;
+        width: 15%;
+        background-color: rgb(36,37,38);
+        overflow: hidden;
+
+    }
+    
+    .main-mid-section .story-section .your-story img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 75%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        filter: brightness(80%);
+        transition: 0.2s all ease-in-out;
+    }
+    .main-mid-section .story-section .your-story:hover img{
+        object-fit: cover;
+        filter: brightness(65%);
+        transform: scale(1.01);
+    }
+    .main-mid-section .story-section .your-story:hover{
+        background-color:rgb(27, 28, 29) ;
+    }
+    .main-mid-section .story-section .your-story p{
+        position: absolute;
+        width: 100%;
+        top: calc(100vh - 77vh);
+        text-align: center;
+        font-weight: 500;
+    }
+    .main-mid-section .story-section .your-story .material-icons-outlined.md-36{
+        position: absolute;
+        top:calc( 100vh - 82vh);
+        left: calc(100vw - 97.5vw);
+        font-size: 40px;
+        border-radius: 50%;
+        padding: 2px;
+        background-color:  rgb(36,37,38);
+        color:rgb(46,137,255) ;
+    }
+    .main-mid-section .story-section .stories:hover{
+        background-size: cover;
+        background-position: -40px 10px; 
+        transition: 0.1s;
+        filter: brightness(60%);
+    }
+    .main-mid-section .story-section .stories{
+        background-image: url(./images/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px;
+        width: 15%;
+        /* border: 1px solid green; */
+        filter: brightness(70%);
+        
+    }
+    .main-mid-section .story-section .stories img{
+        position: absolute;
+        top: calc(100vh - 98vh);
+        left: calc(100vw - 99vw);
+        height: 6vh;
+        width: 3vw;
+        border-radius: 50%;
+        border: 4px solid rgb(46,137,255);
+    }
+    .main-mid-section .story-section .stories p{
+        position: absolute;
+        width: 100%;
+        top: calc(100vh - 77vh);
+        text-align: center;
+        font-weight: 500;
+    }
+/* end story section */
+/* end of mid section */
