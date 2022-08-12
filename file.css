@@ -35,7 +35,7 @@ body{
         display: flex;
         flex-wrap: nowrap;
         flex-direction: horizontal;
-        justify-content: space-around;
+        justify-content: space-between;
         position: fixed;
         background-color: rgb(36,37,38);
         z-index: 11;
@@ -44,21 +44,23 @@ body{
         .facebook-logo__search-box{
             position: relative;
             height:100%;
-            width: 20em;
+            width: calc(100% - 75%);
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            /* border: 1px solid red; */
         }
             .facebook-logo__search-box img{
                 position: relative;
-                height: 63%;
+                height: calc(100% - 37%);
+                width: calc(100% - 90%);
                 cursor: pointer;
             }
             .facebook-logo__search-box .search-box{
                 position: relative;
                 display: flex;
                 align-items: center;
-                width: 16rem;
+                width: calc(100% - 20%);
                 height: 5.8vh;
                 background-color: rgb(58,59,60);
                 border-radius: 35px;
@@ -67,18 +69,18 @@ body{
                 .facebook-logo__search-box #search{
                 
                     color: wheat;
-                    font-size: 1.8rem;
+                    font-size: calc(100vw - 98vw);
                     font-weight: 300;
                     height:60%;
 
                 }
                 .facebook-logo__search-box .search-box input{
-                    width: 80%;
+                    width: calc(100% - 20%);
                     height: 80%;
                     background-color: rgb(58,59,60);
                     border: none;
                     font-family: 'Segoe UI';
-                    font-size: 1.1rem;
+                    font-size: calc(100vw - 98.5vw);
                     font-weight: 100;
                     padding: 0 0 0 0.5rem;
                 }
@@ -124,6 +126,7 @@ body{
         .last-section{
             position: relative;
             width: 15em;
+            border: 1px solid red;
         }
         .last-section ul{
            
@@ -135,12 +138,15 @@ body{
             .last-section ul li {
                 height: 6vh;
                 width: 3.2vw;
-                padding: 0.5rem;
+                /* padding: 0.5rem; */
                 border-radius: 50%;
-               
+                 border: 1px solid red;
                 cursor: pointer;
                 position: relative;
                 background-color:rgb(58,59,60) ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .last-section ul li a{
                 color: white;
@@ -155,7 +161,7 @@ body{
                 height: 6vh;
                 width: 3.2vw;
                 border-radius: 50%;
-                padding: 0;
+                /* padding: 0; */
                 background-image: url(./images/ashim-1.JPG);
                 background-position: center;
                 background-size: cover;
@@ -378,7 +384,7 @@ hr{
 
 } */
 .main-mid-section{
-    /* border: 1px solid white; */
+    border: 1px solid white;
     position: absolute;
     top: 8.4vh;
     left: calc(100% - 80%);
@@ -389,10 +395,11 @@ hr{
 
 /* story section */
     .main-mid-section .story-section{
-        padding:1rem 0 0 0rem;
+        width: 100%;
+        padding:calc(100% - 99%) 0 0 0;
         position: relative;
         height: 30vh;
-        /* border: 1px solid red; */
+        border: 1px solid red;
         display: flex;
         justify-content: space-around;
     }
@@ -400,10 +407,10 @@ hr{
         position: relative;
         /* border :1px solid white; */
         border-radius: 15px;
-        width: 15%;
+        width: calc(100% - 85%);
         background-color: rgb(36,37,38);
         overflow: hidden;
-        margin: 0 0 0 calc(100rem - 93rem);
+        margin: 0 0 0 calc(100% - 88%);
 
     }
     
@@ -422,7 +429,7 @@ hr{
         background-position: center;
         background-size: cover;
         border-radius: 15px;
-        width: 15%;
+        width: calc(100% - 85%);
         /* border: 2px solid white; */
         filter: brightness(70%);
         position: relative;
@@ -632,3 +639,6 @@ hr{
     }
 /* end of use-post */
 /* end of mid section */
+
+
+/* start of  responsiveness for  */
