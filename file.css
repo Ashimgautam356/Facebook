@@ -80,7 +80,7 @@ body{
                     background-color: rgb(58,59,60);
                     border: none;
                     font-family: 'Segoe UI';
-                    font-size: calc(100vw - 98.5vw);
+                    font-size: calc(100vw - 98.8vw);
                     font-weight: 100;
                     padding: 0 0 0 0.5rem;
                 }
@@ -447,8 +447,9 @@ hr{
         position: absolute;
         width: 100%;
         top: calc(100vh - 77vh);
-        text-align: center;
+        text-align: center; 
         font-weight: 500;
+        font-size: calc(100vw - 98.8vw);
     }
     .main-mid-section .story-section .your-story .material-icons-outlined.md-36{
         position: absolute;
@@ -459,6 +460,7 @@ hr{
         padding: 2px;
         background-color:  rgb(36,37,38);
         color:rgb(46,137,255) ;
+        /* border: 1px solid red; */
     }
     .main-mid-section .story-section .stories:hover{
         background-size: cover;
@@ -482,6 +484,8 @@ hr{
         top: calc(100vh - 77vh);
         text-align: center;
         font-weight: 500;
+        font-size: calc(100vw - 98.8vw);
+        color: white;
     }
     .main-mid-section .story-section .stories:last-child{
         margin: 0 calc(100vw - 96vw) 0 0;
@@ -524,7 +528,7 @@ hr{
     border-radius: 30px;
     background-color: rgb(58,59,60);
     border: none;
-    font-size: 1.3rem;
+    font-size: calc( 100vw - 98.4vw);
     cursor: pointer;
 }
 .main-mid-section .post ul li:first-child input:hover{
