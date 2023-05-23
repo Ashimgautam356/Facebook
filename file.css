@@ -126,7 +126,7 @@ body{
         .last-section{
             position: relative;
             width: 15em;
-            border: 1px solid red;
+/*             border: 1px solid red; */
         }
         .last-section ul{
            
@@ -140,7 +140,7 @@ body{
                 width: 3.2vw;
                 /* padding: 0.5rem; */
                 border-radius: 50%;
-                 border: 1px solid red;
+/*                  border: 1px solid red; */
                 cursor: pointer;
                 position: relative;
                 background-color:rgb(58,59,60) ;
@@ -384,7 +384,7 @@ hr{
 
 } */
 .main-mid-section{
-    border: 1px solid white;
+/*     border: 1px solid white; */
     position: absolute;
     top: 8.4vh;
     left: calc(100% - 80%);
@@ -399,7 +399,7 @@ hr{
         padding:calc(100% - 99%) 0 0 0;
         position: relative;
         height: 30vh;
-        border: 1px solid red;
+/*         border: 1px solid red; */
         display: flex;
         justify-content: space-around;
     }
